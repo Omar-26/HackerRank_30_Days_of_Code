@@ -11,21 +11,20 @@ _______/\\\\\_________________/\\\\____________/\\\\_______________/\\\\\\\\\___
         ______\/////_________________\///______________\///____________\///________\///____________\///________\///__
 */
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main()
 {
     string S;
-    getline(cin, S);
-    int string_Int;
+    cin >> S;
     try
     {
-        string_Int = stoi(S);
+        cout << stoi(S);
     }
-    catch (exception &err)
+    catch (...)
     {
         cout << "Bad String" << endl;
-        return 0;
     }
-    cout << string_Int;
+    return 0;
 }
